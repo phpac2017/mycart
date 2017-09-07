@@ -96,8 +96,8 @@
                 </tbody>
             </table>
 
-            <a href="{{ url('/shop') }}" class="btn btn-primary btn-lg">Continue Shopping</a> &nbsp;
-            <a href="{{ url('order') }}" class="btn btn-success btn-lg">Proceed to Checkout</a>
+            <a href="{{ url('/shop') }}" class="btn btn-primary btn-lg ct-btn">Continue Shopping</a> &nbsp;
+            <a href="{{ url('order') }}" class="btn btn-success btn-lg ct-btn">Proceed to Checkout</a>
 
             <div style="float:right">
                 <form action="{{ url('/emptyCart') }}" method="POST">
@@ -110,7 +110,7 @@
         @else
 
             <h3>You have no items in your shopping cart</h3>
-            <a href="{{ url('/shop') }}" class="btn btn-primary btn-lg">Continue Shopping</a>
+            <a href="{{ url('/shop') }}" class="btn btn-primary btn-lg ct-btn">Continue Shopping</a>
 
         @endif
 
