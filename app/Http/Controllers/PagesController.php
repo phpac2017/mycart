@@ -74,7 +74,8 @@ class PagesController extends Controller
         $emailCheck = User::where('email', $email)->value('email');
 
         \Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
-        //dd($emailCheck);
+        //$getCustomer = \Stripe\Customer::all();
+       // dd($getCustomer);
         // If the email doesn't exist in the database create new customer and user record
         if (!isset($emailCheck)) {
             // Create a new Stripe customer
